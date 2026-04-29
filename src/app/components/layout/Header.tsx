@@ -1,5 +1,8 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "../../../imports/Lotus_Prime_Logo2.png";
 
@@ -7,7 +10,7 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +23,7 @@ export function Header() {
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setIsServicesOpen(false);
-  }, [location]);
+  }, [pathname]);
 
   const services = [
     { name: "Website Development", path: "/services/website-development" },
@@ -52,9 +55,9 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-28">
-          <Link to="/" className="flex items-center flex-shrink-0">
+          <Link href="/" className="flex items-center flex-shrink-0">
             <img
-              src={logo}
+              src={logo.src}
               alt="Lotus Prime Digital Solutions"
               className="h-[75px] md:h-[90px] lg:h-[110px] w-auto object-contain max-h-[115px] [image-rendering:-webkit-optimize-contrast]"
             />
@@ -62,7 +65,7 @@ export function Header() {
 
           <nav className="hidden lg:flex items-center space-x-8">
             <Link
-              to="/"
+              href="/"
               className="text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
             >
               Home
@@ -78,7 +81,7 @@ export function Header() {
                   {services.map((service) => (
                     <Link
                       key={service.path}
-                      to={service.path}
+                      href={service.path}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block px-4 py-2 text-sm text-[#0B3C5D] hover:bg-[#1ABC9C]/10 hover:text-[#1ABC9C] transition-colors"
@@ -91,21 +94,21 @@ export function Header() {
             </div>
 
             <Link
-              to="/about"
+              href="/about"
               className="text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
             >
               About Us
             </Link>
 
             <Link
-              to="/contact"
+              href="/contact"
               className="text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
             >
               Contact
             </Link>
 
             <Link
-              to="/contact"
+              href="/contact"
               className="bg-gradient-to-r from-[#0B3C5D] to-[#1ABC9C] text-white px-6 py-2.5 rounded-full hover:shadow-lg transition-all duration-300"
             >
               Get a Quote
@@ -129,7 +132,7 @@ export function Header() {
         <div className="lg:hidden bg-white border-t border-gray-200">
           <nav className="px-4 py-4 space-y-2">
             <Link
-              to="/"
+              href="/"
               className="block py-2 text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
             >
               Home
@@ -152,7 +155,7 @@ export function Header() {
                   {services.map((service) => (
                     <Link
                       key={service.path}
-                      to={service.path}
+                      href={service.path}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block py-1 text-sm text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
@@ -165,21 +168,21 @@ export function Header() {
             </div>
 
             <Link
-              to="/about"
+              href="/about"
               className="block py-2 text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
             >
               About Us
             </Link>
 
             <Link
-              to="/contact"
+              href="/contact"
               className="block py-2 text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
             >
               Contact
             </Link>
 
             <Link
-              to="/contact"
+              href="/contact"
               className="block mt-4 bg-gradient-to-r from-[#0B3C5D] to-[#1ABC9C] text-white px-6 py-2.5 rounded-full text-center hover:shadow-lg transition-all duration-300"
             >
               Get a Quote

@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import Link from "next/link";
 import {
   Mail,
   Phone,
@@ -16,7 +16,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <img src={logo} alt="Lotus Prime" className="h-20 mb-4" />
+            <img src={logo.src} alt="Lotus Prime" className="h-20 mb-4" />
             <p className="text-gray-300 text-sm mb-4">
               End-to-End Digital & AI Solutions for Modern Businesses
             </p>
@@ -53,7 +53,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="text-gray-300 hover:text-[#1ABC9C] transition-colors"
                 >
                   Home
@@ -61,7 +61,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/about"
+                  href="/about"
                   className="text-gray-300 hover:text-[#1ABC9C] transition-colors"
                 >
                   About Us
@@ -69,7 +69,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/contact"
+                  href="/contact"
                   className="text-gray-300 hover:text-[#1ABC9C] transition-colors"
                 >
                   Contact
@@ -83,7 +83,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  to="/services/website-development"
+                  href="/services/website-development"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-[#1ABC9C] transition-colors"
@@ -93,7 +93,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/services/ai-solutions"
+                  href="/services/ai-solutions"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-[#1ABC9C] transition-colors"
@@ -103,7 +103,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/services/mobile-app-development"
+                  href="/services/mobile-app-development"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-[#1ABC9C] transition-colors"
@@ -113,7 +113,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/services/digital-marketing"
+                  href="/services/digital-marketing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-[#1ABC9C] transition-colors"
@@ -123,7 +123,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/services/cloud-solutions"
+                  href="/services/cloud-solutions"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-[#1ABC9C] transition-colors"

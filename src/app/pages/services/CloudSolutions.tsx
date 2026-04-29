@@ -1,3 +1,5 @@
+"use client";
+
 import { Cloud } from "lucide-react";
 import { ServicePageTemplate } from "../../components/ServicePageTemplate";
 
@@ -11,7 +13,8 @@ export default function CloudSolutions() {
       features={[
         {
           title: "Cloud Migration",
-          description: "Seamless migration of applications and data to the cloud.",
+          description:
+            "Seamless migration of applications and data to the cloud.",
         },
         {
           title: "Infrastructure as Code",
@@ -37,15 +40,18 @@ export default function CloudSolutions() {
       benefits={[
         {
           title: "Scalability",
-          description: "Scale resources up or down based on demand without capital investment.",
+          description:
+            "Scale resources up or down based on demand without capital investment.",
         },
         {
           title: "Cost Savings",
-          description: "Pay only for what you use with flexible pricing models.",
+          description:
+            "Pay only for what you use with flexible pricing models.",
         },
         {
           title: "Global Reach",
-          description: "Deploy applications closer to users worldwide for better performance.",
+          description:
+            "Deploy applications closer to users worldwide for better performance.",
         },
         {
           title: "Innovation",
@@ -55,7 +61,8 @@ export default function CloudSolutions() {
       process={[
         {
           title: "Assessment",
-          description: "Evaluate your current infrastructure and cloud readiness.",
+          description:
+            "Evaluate your current infrastructure and cloud readiness.",
         },
         {
           title: "Planning",

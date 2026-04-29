@@ -1,3 +1,5 @@
+"use client";
+
 import { Brain } from "lucide-react";
 import { ServicePageTemplate } from "../../components/ServicePageTemplate";
 
@@ -11,55 +13,67 @@ export default function AISolutions() {
       features={[
         {
           title: "Machine Learning Models",
-          description: "Custom ML models trained on your data for accurate predictions and classifications.",
+          description:
+            "Custom ML models trained on your data for accurate predictions and classifications.",
         },
         {
           title: "Natural Language Processing",
-          description: "Understand and process human language for chatbots, sentiment analysis, and more.",
+          description:
+            "Understand and process human language for chatbots, sentiment analysis, and more.",
         },
         {
           title: "Computer Vision",
-          description: "Image and video analysis for quality control, object detection, and facial recognition.",
+          description:
+            "Image and video analysis for quality control, object detection, and facial recognition.",
         },
         {
           title: "Predictive Analytics",
-          description: "Forecast trends and outcomes to make proactive business decisions.",
+          description:
+            "Forecast trends and outcomes to make proactive business decisions.",
         },
         {
           title: "Process Automation",
-          description: "Automate repetitive tasks with intelligent bots and workflows.",
+          description:
+            "Automate repetitive tasks with intelligent bots and workflows.",
         },
         {
           title: "AI Integration",
-          description: "Seamlessly integrate AI capabilities into your existing systems.",
+          description:
+            "Seamlessly integrate AI capabilities into your existing systems.",
         },
       ]}
       benefits={[
         {
           title: "Reduced Operational Costs",
-          description: "Automate manual processes and reduce labor costs by up to 60%.",
+          description:
+            "Automate manual processes and reduce labor costs by up to 60%.",
         },
         {
           title: "Enhanced Decision Making",
-          description: "Data-driven insights help you make better strategic decisions.",
+          description:
+            "Data-driven insights help you make better strategic decisions.",
         },
         {
           title: "Improved Accuracy",
-          description: "AI reduces human error and improves consistency in operations.",
+          description:
+            "AI reduces human error and improves consistency in operations.",
         },
         {
           title: "Competitive Advantage",
-          description: "Stay ahead of competitors with cutting-edge AI technology.",
+          description:
+            "Stay ahead of competitors with cutting-edge AI technology.",
         },
       ]}
       process={[
         {
           title: "Assessment",
-          description: "Identify opportunities where AI can add value to your business.",
+          description:
+            "Identify opportunities where AI can add value to your business.",
         },
         {
           title: "Strategy",
-          description: "Develop an AI roadmap aligned with your business goals.",
+          description:
+            "Develop an AI roadmap aligned with your business goals.",
         },
         {
           title: "Development",
@@ -67,7 +81,8 @@ export default function AISolutions() {
         },
         {
           title: "Deployment",
-          description: "Integrate AI solutions into your workflows with ongoing optimization.",
+          description:
+            "Integrate AI solutions into your workflows with ongoing optimization.",
         },
       ]}
       gradientFrom="from-[#5B21B6]"

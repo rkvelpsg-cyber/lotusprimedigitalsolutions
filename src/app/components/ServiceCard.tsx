@@ -1,4 +1,6 @@
-import { Link } from "react-router";
+"use client";
+
+import Link from "next/link";
 import { motion } from "motion/react";
 import { LucideIcon } from "lucide-react";
 
@@ -26,7 +28,7 @@ export function ServiceCard({
       className="h-full"
     >
       <Link
-        to={link}
+        href={link}
         target="_blank"
         rel="noopener noreferrer"
         className="block group h-full"

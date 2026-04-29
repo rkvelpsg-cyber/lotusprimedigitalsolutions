@@ -1,3 +1,5 @@
+"use client";
+
 import { ShoppingCart } from "lucide-react";
 import { ServicePageTemplate } from "../../components/ServicePageTemplate";
 
@@ -11,23 +13,28 @@ export default function ECommerceDevelopment() {
       features={[
         {
           title: "Product Management",
-          description: "Easy-to-use system for managing products, variants, and inventory.",
+          description:
+            "Easy-to-use system for managing products, variants, and inventory.",
         },
         {
           title: "Shopping Cart",
-          description: "Seamless shopping experience with cart, wishlist, and checkout.",
+          description:
+            "Seamless shopping experience with cart, wishlist, and checkout.",
         },
         {
           title: "Payment Gateway",
-          description: "Secure payment processing with multiple payment options.",
+          description:
+            "Secure payment processing with multiple payment options.",
         },
         {
           title: "Order Management",
-          description: "Complete order processing, tracking, and fulfillment system.",
+          description:
+            "Complete order processing, tracking, and fulfillment system.",
         },
         {
           title: "Customer Accounts",
-          description: "User registration, profiles, order history, and preferences.",
+          description:
+            "User registration, profiles, order history, and preferences.",
         },
         {
           title: "Marketing Tools",
@@ -37,7 +44,8 @@ export default function ECommerceDevelopment() {
       benefits={[
         {
           title: "24/7 Sales",
-          description: "Sell products around the clock without physical store limitations.",
+          description:
+            "Sell products around the clock without physical store limitations.",
         },
         {
           title: "Global Reach",
@@ -45,7 +53,8 @@ export default function ECommerceDevelopment() {
         },
         {
           title: "Lower Costs",
-          description: "Reduce overhead compared to traditional brick-and-mortar stores.",
+          description:
+            "Reduce overhead compared to traditional brick-and-mortar stores.",
         },
         {
           title: "Data Insights",
@@ -67,7 +76,8 @@ export default function ECommerceDevelopment() {
         },
         {
           title: "Launch",
-          description: "Test thoroughly and deploy with payment gateway integration.",
+          description:
+            "Test thoroughly and deploy with payment gateway integration.",
         },
       ]}
       gradientFrom="from-[#059669]"

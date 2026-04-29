@@ -1,3 +1,5 @@
+"use client";
+
 import { FileText } from "lucide-react";
 import { ServicePageTemplate } from "../../components/ServicePageTemplate";
 
@@ -11,19 +13,23 @@ export default function OfficeAutomation() {
       features={[
         {
           title: "Document Management",
-          description: "Automated document creation, routing, and archival systems.",
+          description:
+            "Automated document creation, routing, and archival systems.",
         },
         {
           title: "Workflow Automation",
-          description: "Custom workflows that automate repetitive business processes.",
+          description:
+            "Custom workflows that automate repetitive business processes.",
         },
         {
           title: "Email Automation",
-          description: "Automate email communications, follow-ups, and notifications.",
+          description:
+            "Automate email communications, follow-ups, and notifications.",
         },
         {
           title: "Data Entry Automation",
-          description: "Eliminate manual data entry with intelligent form processing.",
+          description:
+            "Eliminate manual data entry with intelligent form processing.",
         },
         {
           title: "Reporting & Analytics",
@@ -41,7 +47,8 @@ export default function OfficeAutomation() {
         },
         {
           title: "Error Reduction",
-          description: "Minimize human errors in data processing and documentation.",
+          description:
+            "Minimize human errors in data processing and documentation.",
         },
         {
           title: "Cost Efficiency",
@@ -49,7 +56,8 @@ export default function OfficeAutomation() {
         },
         {
           title: "Better Compliance",
-          description: "Maintain consistent processes and audit trails for compliance.",
+          description:
+            "Maintain consistent processes and audit trails for compliance.",
         },
       ]}
       process={[

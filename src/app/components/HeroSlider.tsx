@@ -1,7 +1,9 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
-import { Link } from "react-router";
+import Link from "next/link";
 
 interface Slide {
   image: string;
@@ -232,7 +234,7 @@ export function HeroSlider() {
                   className="flex flex-col sm:flex-row gap-4"
                 >
                   <Link
-                    to={
+                    href={
                       slides[currentIndex].ctaLink ||
                       "/services/website-development"
                     }
@@ -242,7 +244,7 @@ export function HeroSlider() {
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                   <Link
-                    to="/contact"
+                    href="/contact"
                     className="inline-flex items-center justify-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-[#0B3C5D] transition-all duration-300"
                   >
                     Get a Quote

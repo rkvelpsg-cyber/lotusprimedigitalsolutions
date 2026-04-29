@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "motion/react";
 import { Target, Eye, Heart, Users, Award, TrendingUp } from "lucide-react";
 

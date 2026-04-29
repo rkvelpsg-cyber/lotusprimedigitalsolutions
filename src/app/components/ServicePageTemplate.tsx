@@ -1,4 +1,6 @@
-import { Link } from "react-router";
+"use client";
+
+import Link from "next/link";
 import { motion } from "motion/react";
 import { LucideIcon, ArrowRight, CheckCircle } from "lucide-react";
 
@@ -68,7 +70,7 @@ export function ServicePageTemplate({
               <h1 className="text-4xl md:text-5xl mb-6">{title}</h1>
               <p className="text-lg text-white/90 mb-8">{description}</p>
               <Link
-                to="/contact"
+                href="/contact"
                 className="inline-flex items-center bg-white text-[#0B3C5D] px-8 py-4 rounded-full hover:shadow-2xl transition-all duration-300"
               >
                 Request Demo
@@ -240,7 +242,7 @@ export function ServicePageTemplate({
               business
             </p>
             <Link
-              to="/contact"
+              href="/contact"
               className="inline-flex items-center bg-white text-[#0B3C5D] px-8 py-4 rounded-full hover:shadow-2xl transition-all duration-300"
             >
               Request Demo

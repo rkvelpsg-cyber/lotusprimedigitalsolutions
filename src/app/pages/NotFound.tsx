@@ -1,4 +1,6 @@
-import { Link } from "react-router";
+"use client";
+
+import Link from "next/link";
 import { Home, ArrowLeft } from "lucide-react";
 
 export default function NotFound() {
@@ -15,13 +17,14 @@ export default function NotFound() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            to="/"
+            href="/"
             className="inline-flex items-center justify-center bg-white text-[#0B3C5D] px-8 py-4 rounded-full hover:shadow-2xl transition-all duration-300"
           >
             <Home className="mr-2 w-5 h-5" />
             Go Home
           </Link>
           <button
+            type="button"
             onClick={() => window.history.back()}
             className="inline-flex items-center justify-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-[#0B3C5D] transition-all duration-300"
           >

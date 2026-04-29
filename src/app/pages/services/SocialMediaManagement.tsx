@@ -1,3 +1,5 @@
+"use client";
+
 import { Share2 } from "lucide-react";
 import { ServicePageTemplate } from "../../components/ServicePageTemplate";
 
@@ -11,11 +13,13 @@ export default function SocialMediaManagement() {
       features={[
         {
           title: "Content Creation",
-          description: "Eye-catching posts, graphics, and videos tailored to each platform.",
+          description:
+            "Eye-catching posts, graphics, and videos tailored to each platform.",
         },
         {
           title: "Community Management",
-          description: "Engage with your audience and build meaningful relationships.",
+          description:
+            "Engage with your audience and build meaningful relationships.",
         },
         {
           title: "Social Listening",
@@ -27,35 +31,42 @@ export default function SocialMediaManagement() {
         },
         {
           title: "Social Advertising",
-          description: "Targeted ad campaigns on Facebook, Instagram, LinkedIn, and more.",
+          description:
+            "Targeted ad campaigns on Facebook, Instagram, LinkedIn, and more.",
         },
         {
           title: "Performance Analytics",
-          description: "Track engagement, growth, and ROI across all platforms.",
+          description:
+            "Track engagement, growth, and ROI across all platforms.",
         },
       ]}
       benefits={[
         {
           title: "Brand Awareness",
-          description: "Increase visibility and reach new audiences organically.",
+          description:
+            "Increase visibility and reach new audiences organically.",
         },
         {
           title: "Customer Engagement",
-          description: "Build relationships and foster brand loyalty through interaction.",
+          description:
+            "Build relationships and foster brand loyalty through interaction.",
         },
         {
           title: "Drive Traffic",
-          description: "Direct social media followers to your website and landing pages.",
+          description:
+            "Direct social media followers to your website and landing pages.",
         },
         {
           title: "Crisis Management",
-          description: "Protect your brand reputation with proactive monitoring.",
+          description:
+            "Protect your brand reputation with proactive monitoring.",
         },
       ]}
       process={[
         {
           title: "Audit",
-          description: "Review your current social media presence and strategy.",
+          description:
+            "Review your current social media presence and strategy.",
         },
         {
           title: "Planning",

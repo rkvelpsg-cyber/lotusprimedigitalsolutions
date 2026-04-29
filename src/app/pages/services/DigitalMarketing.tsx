@@ -1,3 +1,5 @@
+"use client";
+
 import { TrendingUp } from "lucide-react";
 import { ServicePageTemplate } from "../../components/ServicePageTemplate";
 
@@ -11,41 +13,50 @@ export default function DigitalMarketing() {
       features={[
         {
           title: "SEO Services",
-          description: "Improve search engine rankings and drive organic traffic to your website.",
+          description:
+            "Improve search engine rankings and drive organic traffic to your website.",
         },
         {
           title: "PPC Advertising",
-          description: "Targeted Google Ads and social media advertising campaigns.",
+          description:
+            "Targeted Google Ads and social media advertising campaigns.",
         },
         {
           title: "Content Marketing",
-          description: "Engaging content that attracts and retains your ideal customers.",
+          description:
+            "Engaging content that attracts and retains your ideal customers.",
         },
         {
           title: "Email Marketing",
-          description: "Personalized email campaigns that nurture leads and drive sales.",
+          description:
+            "Personalized email campaigns that nurture leads and drive sales.",
         },
         {
           title: "Analytics & Reporting",
-          description: "Track ROI with comprehensive marketing analytics and insights.",
+          description:
+            "Track ROI with comprehensive marketing analytics and insights.",
         },
         {
           title: "Conversion Optimization",
-          description: "A/B testing and optimization to maximize conversion rates.",
+          description:
+            "A/B testing and optimization to maximize conversion rates.",
         },
       ]}
       benefits={[
         {
           title: "Increased Visibility",
-          description: "Get found by customers searching for your products or services online.",
+          description:
+            "Get found by customers searching for your products or services online.",
         },
         {
           title: "Higher ROI",
-          description: "Data-driven strategies that deliver measurable return on investment.",
+          description:
+            "Data-driven strategies that deliver measurable return on investment.",
         },
         {
           title: "Brand Authority",
-          description: "Establish your brand as an industry leader and trusted authority.",
+          description:
+            "Establish your brand as an industry leader and trusted authority.",
         },
         {
           title: "Scalable Growth",

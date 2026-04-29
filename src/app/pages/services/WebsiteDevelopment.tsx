@@ -1,3 +1,5 @@
+"use client";
+
 import { Globe } from "lucide-react";
 import { ServicePageTemplate } from "../../components/ServicePageTemplate";
 
@@ -11,55 +13,67 @@ export default function WebsiteDevelopment() {
       features={[
         {
           title: "Responsive Design",
-          description: "Mobile-first approach ensuring perfect display across all devices and screen sizes.",
+          description:
+            "Mobile-first approach ensuring perfect display across all devices and screen sizes.",
         },
         {
           title: "Modern Technologies",
-          description: "Built with cutting-edge frameworks like React, Next.js, and Node.js for optimal performance.",
+          description:
+            "Built with cutting-edge frameworks like React, Next.js, and Node.js for optimal performance.",
         },
         {
           title: "SEO Optimized",
-          description: "Structured for search engine visibility to help your business get discovered online.",
+          description:
+            "Structured for search engine visibility to help your business get discovered online.",
         },
         {
           title: "Fast Loading",
-          description: "Optimized code and assets for lightning-fast page load times.",
+          description:
+            "Optimized code and assets for lightning-fast page load times.",
         },
         {
           title: "CMS Integration",
-          description: "Easy content management with WordPress, Strapi, or custom CMS solutions.",
+          description:
+            "Easy content management with WordPress, Strapi, or custom CMS solutions.",
         },
         {
           title: "Security First",
-          description: "Industry-standard security practices to protect your website and user data.",
+          description:
+            "Industry-standard security practices to protect your website and user data.",
         },
       ]}
       benefits={[
         {
           title: "Increased Online Presence",
-          description: "Establish a professional digital presence that builds trust with your audience.",
+          description:
+            "Establish a professional digital presence that builds trust with your audience.",
         },
         {
           title: "Better User Experience",
-          description: "Intuitive navigation and design that keeps visitors engaged and converts them into customers.",
+          description:
+            "Intuitive navigation and design that keeps visitors engaged and converts them into customers.",
         },
         {
           title: "Scalable Solutions",
-          description: "Built to grow with your business, easily adding new features and functionality.",
+          description:
+            "Built to grow with your business, easily adding new features and functionality.",
         },
         {
           title: "24/7 Availability",
-          description: "Your website works around the clock, reaching customers globally.",
+          description:
+            "Your website works around the clock, reaching customers globally.",
         },
       ]}
       process={[
         {
           title: "Discovery",
-          description: "Understanding your goals, target audience, and requirements.",
+          description:
+            "Understanding your goals, target audience, and requirements.",
         },
         {
           title: "Design",
-          description: "Creating wireframes and visual designs for your approval.",
+          description:
+            "Creating wireframes and visual designs for your approval.",
         },
         {
           title: "Development",

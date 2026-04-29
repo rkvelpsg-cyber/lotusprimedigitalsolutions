@@ -1,3 +1,5 @@
+"use client";
+
 import { Smartphone } from "lucide-react";
 import { ServicePageTemplate } from "../../components/ServicePageTemplate";
 
@@ -11,11 +13,13 @@ export default function MobileAppDevelopment() {
       features={[
         {
           title: "iOS & Android Apps",
-          description: "Native apps for both platforms or cross-platform solutions using React Native and Flutter.",
+          description:
+            "Native apps for both platforms or cross-platform solutions using React Native and Flutter.",
         },
         {
           title: "Intuitive UI/UX",
-          description: "User-friendly interfaces designed for mobile-first experiences.",
+          description:
+            "User-friendly interfaces designed for mobile-first experiences.",
         },
         {
           title: "Offline Functionality",
@@ -23,15 +27,18 @@ export default function MobileAppDevelopment() {
         },
         {
           title: "Push Notifications",
-          description: "Keep users engaged with timely and relevant notifications.",
+          description:
+            "Keep users engaged with timely and relevant notifications.",
         },
         {
           title: "API Integration",
-          description: "Connect to your backend services, third-party APIs, and cloud platforms.",
+          description:
+            "Connect to your backend services, third-party APIs, and cloud platforms.",
         },
         {
           title: "App Store Deployment",
-          description: "End-to-end support for publishing on Apple App Store and Google Play.",
+          description:
+            "End-to-end support for publishing on Apple App Store and Google Play.",
         },
       ]}
       benefits={[
@@ -41,25 +48,30 @@ export default function MobileAppDevelopment() {
         },
         {
           title: "Increased Engagement",
-          description: "Mobile apps have higher engagement rates than mobile websites.",
+          description:
+            "Mobile apps have higher engagement rates than mobile websites.",
         },
         {
           title: "Brand Recognition",
-          description: "Strengthen brand presence with a dedicated app on users' devices.",
+          description:
+            "Strengthen brand presence with a dedicated app on users' devices.",
         },
         {
           title: "Revenue Growth",
-          description: "Enable in-app purchases, subscriptions, and mobile commerce.",
+          description:
+            "Enable in-app purchases, subscriptions, and mobile commerce.",
         },
       ]}
       process={[
         {
           title: "Planning",
-          description: "Define features, user flows, and technical requirements.",
+          description:
+            "Define features, user flows, and technical requirements.",
         },
         {
           title: "Design",
-          description: "Create stunning UI/UX designs following platform guidelines.",
+          description:
+            "Create stunning UI/UX designs following platform guidelines.",
         },
         {
           title: "Development",

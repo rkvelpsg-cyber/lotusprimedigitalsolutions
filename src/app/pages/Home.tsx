@@ -1,4 +1,6 @@
-import { Link } from "react-router";
+"use client";
+
+import Link from "next/link";
 import { motion } from "motion/react";
 import {
   Globe,
@@ -287,7 +289,7 @@ export default function Home() {
                 ))}
               </ul>
               <Link
-                to="/contact"
+                href="/contact"
                 className="inline-flex items-center bg-gradient-to-r from-[#0B3C5D] to-[#1ABC9C] text-white px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300"
               >
                 Request Demo
@@ -349,7 +351,7 @@ export default function Home() {
               Let's discuss how we can help you achieve your digital goals
             </p>
             <Link
-              to="/contact"
+              href="/contact"
               className="inline-flex items-center bg-white text-[#0B3C5D] px-8 py-4 rounded-full hover:shadow-2xl transition-all duration-300"
             >
               Get Started Today

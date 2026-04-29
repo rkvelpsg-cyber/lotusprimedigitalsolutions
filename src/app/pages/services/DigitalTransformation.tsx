@@ -1,3 +1,5 @@
+"use client";
+
 import { Workflow } from "lucide-react";
 import { ServicePageTemplate } from "../../components/ServicePageTemplate";
 
@@ -11,19 +13,23 @@ export default function DigitalTransformation() {
       features={[
         {
           title: "Digital Strategy",
-          description: "Comprehensive roadmap aligned with your business objectives.",
+          description:
+            "Comprehensive roadmap aligned with your business objectives.",
         },
         {
           title: "Process Digitization",
-          description: "Transform manual processes into efficient digital workflows.",
+          description:
+            "Transform manual processes into efficient digital workflows.",
         },
         {
           title: "Legacy Modernization",
-          description: "Upgrade outdated systems with modern technology solutions.",
+          description:
+            "Upgrade outdated systems with modern technology solutions.",
         },
         {
           title: "Change Management",
-          description: "Support your team through organizational and cultural change.",
+          description:
+            "Support your team through organizational and cultural change.",
         },
         {
           title: "Integration Services",
@@ -31,21 +37,25 @@ export default function DigitalTransformation() {
         },
         {
           title: "Training & Support",
-          description: "Comprehensive training programs for successful adoption.",
+          description:
+            "Comprehensive training programs for successful adoption.",
         },
       ]}
       benefits={[
         {
           title: "Competitive Advantage",
-          description: "Stay ahead of competitors with modern digital capabilities.",
+          description:
+            "Stay ahead of competitors with modern digital capabilities.",
         },
         {
           title: "Operational Efficiency",
-          description: "Streamline operations and reduce costs through automation.",
+          description:
+            "Streamline operations and reduce costs through automation.",
         },
         {
           title: "Better Customer Experience",
-          description: "Deliver seamless experiences across all customer touchpoints.",
+          description:
+            "Deliver seamless experiences across all customer touchpoints.",
         },
         {
           title: "Future-Ready",
@@ -63,7 +73,8 @@ export default function DigitalTransformation() {
         },
         {
           title: "Implementation",
-          description: "Execute phased rollout with minimal business disruption.",
+          description:
+            "Execute phased rollout with minimal business disruption.",
         },
         {
           title: "Evolution",

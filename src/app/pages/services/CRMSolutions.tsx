@@ -1,3 +1,5 @@
+"use client";
+
 import { Users } from "lucide-react";
 import { ServicePageTemplate } from "../../components/ServicePageTemplate";
 
@@ -11,7 +13,8 @@ export default function CRMSolutions() {
       features={[
         {
           title: "Contact Management",
-          description: "Centralize all customer information and interaction history.",
+          description:
+            "Centralize all customer information and interaction history.",
         },
         {
           title: "Sales Pipeline",
@@ -23,11 +26,13 @@ export default function CRMSolutions() {
         },
         {
           title: "Customer Support",
-          description: "Manage tickets, track issues, and improve response times.",
+          description:
+            "Manage tickets, track issues, and improve response times.",
         },
         {
           title: "Analytics & Reports",
-          description: "Gain insights with customizable dashboards and reports.",
+          description:
+            "Gain insights with customizable dashboards and reports.",
         },
         {
           title: "Mobile Access",
@@ -37,15 +42,18 @@ export default function CRMSolutions() {
       benefits={[
         {
           title: "Increased Sales",
-          description: "Close more deals with better lead management and follow-up.",
+          description:
+            "Close more deals with better lead management and follow-up.",
         },
         {
           title: "Better Customer Service",
-          description: "Respond faster and provide personalized customer experiences.",
+          description:
+            "Respond faster and provide personalized customer experiences.",
         },
         {
           title: "Team Collaboration",
-          description: "Keep your team aligned with shared customer information.",
+          description:
+            "Keep your team aligned with shared customer information.",
         },
         {
           title: "Data-Driven Decisions",
