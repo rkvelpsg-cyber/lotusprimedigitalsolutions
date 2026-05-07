@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logo from "../../../imports/Lotus_Prime_Logo2.png";
+import logo from "../../../imports/Lotus_Prime_SVG.svg";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);

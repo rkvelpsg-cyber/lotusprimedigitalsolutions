@@ -8,7 +8,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
-import logo from "../../../imports/Lotus_Prime_Logo2.png";
+import logo from "../../../imports/Lotus_Prime_SVG.svg";
 
 export function Footer() {
   return (
