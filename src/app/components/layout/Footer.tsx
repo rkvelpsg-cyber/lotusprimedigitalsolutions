@@ -147,19 +147,19 @@ export function Footer() {
               <li className="flex items-center space-x-2">
                 <Phone className="w-5 h-5 text-[#1ABC9C]" />
                 <a
-                  href="tel:+919345770456"
+                  href="tel:+919363070456"
                   className="text-gray-300 hover:text-[#1ABC9C]"
                 >
-                  +91-9345770456
+                  +91-9363070456
                 </a>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 text-[#1ABC9C]" />
                 <a
-                  href="mailto:info@lotusprimedigital.com"
+                  href="mailto:info@lotusprimedigitalsolutions.com"
                   className="text-gray-300 hover:text-[#1ABC9C]"
                 >
-                  info@lotusprimedigital.com
+                  info@lotusprimedigitalsolutions.com
                 </a>
               </li>
             </ul>

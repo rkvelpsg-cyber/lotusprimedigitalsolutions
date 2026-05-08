@@ -121,10 +121,10 @@ export default function Contact() {
                   <div>
                     <h3 className="text-[#0B3C5D] mb-1">Phone</h3>
                     <a
-                      href="tel:+919345770456"
+                      href="tel:+919363070456"
                       className="text-gray-600 hover:text-[#1ABC9C] transition-colors"
                     >
-                      +91-9345770456
+                      +91-9363070456
                     </a>
                   </div>
                 </div>
@@ -136,10 +136,10 @@ export default function Contact() {
                   <div>
                     <h3 className="text-[#0B3C5D] mb-1">Email</h3>
                     <a
-                      href="mailto:info@lotusprimedigital.com"
+                      href="mailto:info@lotusprimedigitalsolutions.com"
                       className="text-gray-600 hover:text-[#1ABC9C] transition-colors"
                     >
-                      info@lotusprimedigital.com
+                      info@lotusprimedigitalsolutions.com
                     </a>
                   </div>
                 </div>
