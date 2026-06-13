@@ -28,7 +28,6 @@ import {
 import { ServiceCard } from "../components/ServiceCard";
 import { IndustryCard } from "../components/IndustryCard";
 import { StatsCounter } from "../components/StatsCounter";
-import { TestimonialCard } from "../components/TestimonialCard";
 import { HeroSlider } from "../components/HeroSlider";
 
 export default function Home() {
@@ -107,30 +106,26 @@ export default function Home() {
     { icon: DollarSign, name: "Financial Services" },
   ];
 
-  const testimonials = [
+  const clientLogos = [
     {
-      name: "Rajesh Kumar",
-      company: "TechVision Industries",
-      text: "Lotus Prime transformed our digital presence completely. Their AI solutions helped us automate 60% of our operations.",
-      rating: 5,
-      image:
-        "https://images.unsplash.com/photo-1717068341511-204207d72705?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
+      name: "Birla Open Minds",
+      src: "/Birla_Logo.jpeg",
+      location: "Bangalore",
     },
     {
-      name: "Priya Sharma",
-      company: "EduCare Institute",
-      text: "Outstanding service and support. The mobile app they developed has increased our student engagement by 300%.",
-      rating: 5,
-      image:
-        "https://images.unsplash.com/photo-1770058428154-9eee8a6a1fbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
+      name: "AJ Exotic Pets",
+      src: "/AJ_Exotic_Logo.png",
+      location: "Bangalore",
     },
     {
-      name: "Anand Reddy",
-      company: "HealthFirst Hospital",
-      text: "Professional team with deep technical expertise. Their cloud solutions made our operations seamless.",
-      rating: 5,
-      image:
-        "https://images.unsplash.com/photo-1655249493799-9cee4fe983bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
+      name: "LePearl Education",
+      src: "/LePearl_Logo_Canva_1.png",
+      location: "Bihar",
+    },
+    {
+      name: "Asian Dental Clinic",
+      src: "/Asian_Dental.png",
+      location: "Bangalore",
     },
   ];
 
@@ -311,7 +306,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Client Logos */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -321,17 +316,36 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl text-[#0B3C5D] mb-4">
-              What Our Clients Say
+              Trusted by Leading Clients
             </h2>
             <p className="text-lg text-gray-600">
-              Trusted by businesses across industries
+              Showcasing organizations we have successfully partnered with
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={index} {...testimonial} index={index} />
-            ))}
+          <div className="overflow-hidden">
+            <motion.div
+              className="flex w-max gap-6 md:gap-8"
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
+            >
+              {[...clientLogos, ...clientLogos].map((client, index) => (
+                <div
+                  key={`${client.name}-${index}`}
+                  className="bg-gray-50 border border-gray-100 rounded-2xl p-6 h-64 md:h-72 w-[18rem] md:w-[20rem] relative flex items-center justify-center shrink-0"
+                >
+                  <img
+                    src={client.src}
+                    alt={`${client.name} logo`}
+                    className="max-h-40 md:max-h-48 w-auto max-w-full object-contain"
+                    loading="lazy"
+                  />
+                  <p className="absolute bottom-5 left-0 right-0 text-center text-sm md:text-base text-[#0B3C5D] font-medium">
+                    {client.location}
+                  </p>
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>
