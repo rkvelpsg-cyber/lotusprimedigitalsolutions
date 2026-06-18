@@ -16,8 +16,23 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! We'll get back to you soon.");
+
+    const adminWhatsAppNumber = "919363070456";
+    const whatsappMessage = [
+      "New Contact Form Submission",
+      "",
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Phone: ${formData.phone || "Not provided"}`,
+      `Company: ${formData.company || "Not provided"}`,
+      `Service: ${formData.service || "Not selected"}`,
+      `Message: ${formData.message}`,
+    ].join("\n");
+
+    const whatsappUrl = `https://wa.me/${adminWhatsAppNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+
+    alert("Your message is ready to send via WhatsApp.");
     setFormData({
       name: "",
       email: "",

@@ -22,7 +22,9 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/lotusprimedigitalsolutions"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#1ABC9C] hover:text-white transition-colors"
               >
                 <Facebook className="w-5 h-5" />
@@ -40,7 +42,9 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/lotusprimedigitalsolutions/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#1ABC9C] hover:text-white transition-colors"
               >
                 <Instagram className="w-5 h-5" />

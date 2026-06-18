@@ -299,8 +299,8 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <StatsCounter end={250} label="Projects Completed" suffix="+" />
-            <StatsCounter end={180} label="Clients Served" suffix="+" />
+            <StatsCounter end={60} label="Projects Completed" suffix="+" />
+            <StatsCounter end={35} label="Clients Served" suffix="+" />
             <StatsCounter end={9} label="Industries Covered" suffix="+" />
           </div>
         </div>
