@@ -130,7 +130,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="pt-28">
+    <div className="pt-36">
       {/* Hero Section - Full Width Slider */}
       <section className="relative h-screen min-h-[600px] max-h-[900px]">
         <HeroSlider />

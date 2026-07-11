@@ -10,6 +10,11 @@ export default function SocialMediaManagement() {
       title="Social Media Management"
       description="Build and engage your community across social platforms. Professional social media management that drives brand awareness and customer loyalty."
       heroImage="https://images.unsplash.com/photo-1759215524649-78b47fc790e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      overview={[
+        "Social media has become one of the most powerful channels for building brand awareness, engaging with customers, and driving business growth. With over 500 million active social media users in India, platforms like Instagram, Facebook, LinkedIn, YouTube, and Twitter offer unparalleled reach. Lotus Prime Digital Solutions provides professional social media management services to businesses in Bangalore and across India — helping you build a consistent, engaging, and conversion-focused social presence.",
+        "Our social media team handles everything: strategy development, content calendar planning, graphic design, video editing, caption writing, hashtag research, community engagement, influencer outreach, and paid social advertising campaigns. We tailor our approach to each platform — creating professional thought-leadership content for LinkedIn, visually rich posts for Instagram, engaging video content for YouTube Shorts and Reels, and timely promotional campaigns on Facebook.",
+        "Consistent, high-quality social media management builds trust with your audience, keeps your brand top-of-mind, and drives traffic to your website and offers. Our clients typically see a 3x increase in engagement and significant growth in follower count within the first three months. We provide monthly performance reports tracking reach, engagement, follower growth, and lead generation metrics so you always know the ROI of your social investment. Contact us today for a free social media audit.",
+      ]}
       features={[
         {
           title: "Content Creation",

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logo from "../../../imports/Lotus_Prime_SVG.svg";
+const LOGO_SRC = "/LP%20Logo%20Vector.svg";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,22 +57,22 @@ export function Header() {
         <div className="flex items-center justify-between h-28">
           <Link href="/" className="flex items-center flex-shrink-0">
             <img
-              src={logo.src}
+              src={LOGO_SRC}
               alt="Lotus Prime Digital Solutions"
-              className="h-[75px] md:h-[90px] lg:h-[110px] w-auto object-contain max-h-[115px] [image-rendering:-webkit-optimize-contrast]"
+              className="h-[50px] sm:h-[60px] md:h-[70px] lg:h-[85px] w-auto object-contain"
             />
           </Link>
 
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-2">
             <Link
               href="/"
-              className="text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
+              className="text-[#0B3C5D] hover:text-white hover:bg-gradient-to-r hover:from-slate-600 hover:via-[#1ABC9C] hover:to-purple-600 px-4 py-2 rounded-full transition-all duration-300 font-medium"
             >
               Home
             </Link>
 
             <div className="relative group">
-              <button className="flex items-center text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors">
+              <button className="flex items-center text-[#0B3C5D] hover:text-white hover:bg-gradient-to-r hover:from-slate-600 hover:via-[#1ABC9C] hover:to-purple-600 px-4 py-2 rounded-full transition-all duration-300 font-medium">
                 Services
                 <ChevronDown className="ml-1 w-4 h-4" />
               </button>
@@ -95,14 +95,14 @@ export function Header() {
 
             <Link
               href="/about"
-              className="text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
+              className="text-[#0B3C5D] hover:text-white hover:bg-gradient-to-r hover:from-slate-600 hover:via-[#1ABC9C] hover:to-purple-600 px-4 py-2 rounded-full transition-all duration-300 font-medium"
             >
               About Us
             </Link>
 
             <Link
               href="/contact"
-              className="text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
+              className="text-[#0B3C5D] hover:text-white hover:bg-gradient-to-r hover:from-slate-600 hover:via-[#1ABC9C] hover:to-purple-600 px-4 py-2 rounded-full transition-all duration-300 font-medium"
             >
               Contact
             </Link>
@@ -115,22 +115,18 @@ export function Header() {
             </Link>
 
             <div className="flex items-center space-x-2 ml-6 pl-6 border-l border-gray-200">
-              <a
-                href="https://crm.lotusprimedigitalsolutions.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/crm"
                 className="px-4 py-2 bg-[#1ABC9C]/10 text-[#1ABC9C] rounded-lg font-medium hover:bg-gradient-to-r hover:from-[#1ABC9C] hover:to-[#0FB58A] hover:text-white hover:shadow-lg hover:shadow-[#1ABC9C]/50 hover:scale-105 transition-all duration-300"
               >
                 CRM
-              </a>
-              <a
-                href="https://employee.lotusprimedigitalsolutions.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              </Link>
+              <Link
+                href="/employee/login"
                 className="px-4 py-2 bg-[#0B3C5D]/10 text-[#0B3C5D] rounded-lg font-medium hover:bg-gradient-to-r hover:from-[#0B3C5D] hover:to-[#1ABC9C] hover:text-white hover:shadow-lg hover:shadow-[#0B3C5D]/50 hover:scale-105 transition-all duration-300"
               >
                 Employee Login
-              </a>
+              </Link>
             </div>
           </nav>
 
@@ -152,7 +148,7 @@ export function Header() {
           <nav className="px-4 py-4 space-y-2">
             <Link
               href="/"
-              className="block py-2 text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
+              className="block px-3 py-2 rounded-lg text-[#0B3C5D] hover:text-white hover:bg-gradient-to-r hover:from-slate-600 hover:via-[#1ABC9C] hover:to-purple-600 transition-all duration-300 font-medium"
             >
               Home
             </Link>
@@ -160,7 +156,7 @@ export function Header() {
             <div>
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="flex items-center justify-between w-full py-2 text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
+                className="flex items-center justify-between w-full px-3 py-2 rounded-lg text-[#0B3C5D] hover:text-white hover:bg-gradient-to-r hover:from-slate-600 hover:via-[#1ABC9C] hover:to-purple-600 transition-all duration-300 font-medium"
               >
                 Services
                 <ChevronDown
@@ -188,14 +184,14 @@ export function Header() {
 
             <Link
               href="/about"
-              className="block py-2 text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
+              className="block px-3 py-2 rounded-lg text-[#0B3C5D] hover:text-white hover:bg-gradient-to-r hover:from-slate-600 hover:via-[#1ABC9C] hover:to-purple-600 transition-all duration-300 font-medium"
             >
               About Us
             </Link>
 
             <Link
               href="/contact"
-              className="block py-2 text-[#0B3C5D] hover:text-[#1ABC9C] transition-colors"
+              className="block px-3 py-2 rounded-lg text-[#0B3C5D] hover:text-white hover:bg-gradient-to-r hover:from-slate-600 hover:via-[#1ABC9C] hover:to-purple-600 transition-all duration-300 font-medium"
             >
               Contact
             </Link>
@@ -208,22 +204,13 @@ export function Header() {
             </Link>
 
             <div className="flex flex-col space-y-2 mt-4 pt-4 border-t border-gray-200">
-              <a
-                href="https://crm.lotusprimedigitalsolutions.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/crm"
                 className="block w-full px-4 py-2 bg-[#1ABC9C]/10 text-[#1ABC9C] rounded-lg font-medium text-center hover:bg-gradient-to-r hover:from-[#1ABC9C] hover:to-[#0FB58A] hover:text-white hover:shadow-lg hover:shadow-[#1ABC9C]/50 hover:scale-105 transition-all duration-300"
               >
                 CRM
-              </a>
-              <a
-                href="https://employee.lotusprimedigitalsolutions.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full px-4 py-2 bg-[#0B3C5D]/10 text-[#0B3C5D] rounded-lg font-medium text-center hover:bg-gradient-to-r hover:from-[#0B3C5D] hover:to-[#1ABC9C] hover:text-white hover:shadow-lg hover:shadow-[#0B3C5D]/50 hover:scale-105 transition-all duration-300"
-              >
-                Employee Login
-              </a>
+              </Link>
+              <a href="/employee/login">Employee Login</a>
             </div>
           </nav>
         </div>

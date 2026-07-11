@@ -32,14 +32,13 @@ export default function About() {
   ];
 
   const stats = [
-    { number: "10+", label: "Years Experience" },
-    { number: "250+", label: "Projects Delivered" },
-    { number: "180+", label: "Happy Clients" },
-    { number: "9+", label: "Industries Served" },
+    { number: "60+", label: "Projects Completed" },
+    { number: "35+", label: "Clients Served" },
+    { number: "9+", label: "Industries Covered" },
   ];
 
   return (
-    <div className="pt-28">
+    <div className="pt-36">
       {/* Hero Section */}
       <section className="relative py-20 text-white overflow-hidden">
         <div className="absolute inset-0">

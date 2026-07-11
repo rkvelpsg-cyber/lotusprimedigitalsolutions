@@ -10,6 +10,11 @@ export default function OfficeAutomation() {
       title="Office Automation"
       description="Streamline your office operations with intelligent automation solutions. Reduce manual work, eliminate errors, and boost productivity across your organization."
       heroImage="https://images.unsplash.com/photo-1759752393975-7ca7b302fcc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      overview={[
+        "Manual, paper-based, and repetitive office processes cost your business time, money, and accuracy every single day. Lotus Prime Digital Solutions helps organizations in Bangalore and across India automate their office operations — from document management and HR processes to approval workflows and financial reporting — using modern automation platforms and custom software. Our office automation solutions free your staff from tedious manual work so they can focus on value-added activities.",
+        "We design and implement automation solutions for a wide range of business functions: automated invoice processing and accounts payable, HR onboarding and leave management workflows, purchase order and approval systems, email and notification automation, report generation and scheduling, and integration between your existing business applications (ERP, CRM, accounting software). Our tools include Microsoft Power Automate, Zapier, UiPath RPA, and custom-built workflow engines.",
+        "Organizations that implement office automation typically see a 40–70% reduction in processing time, near-elimination of manual data entry errors, and significant cost savings within the first year. More importantly, automated workflows provide full audit trails and compliance documentation — critical for industries like manufacturing, healthcare, and financial services. Our team conducts a thorough process audit before recommending automation solutions, ensuring we target the highest-impact workflows first. Book a free process automation consultation today.",
+      ]}
       features={[
         {
           title: "Document Management",

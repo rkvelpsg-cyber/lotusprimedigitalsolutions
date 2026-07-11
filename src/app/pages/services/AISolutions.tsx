@@ -10,6 +10,11 @@ export default function AISolutions() {
       title="AI Solutions"
       description="Harness the power of artificial intelligence to automate processes, gain insights, and make data-driven decisions. Transform your business with intelligent AI solutions."
       heroImage="https://images.unsplash.com/photo-1675557009483-e6cf3867976b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      overview={[
+        "Artificial Intelligence is no longer a futuristic concept — it is a practical business tool that is transforming industries worldwide. At Lotus Prime Digital Solutions, we design and deliver end-to-end AI solutions for businesses in Bangalore and across India, helping organizations of all sizes automate operations, uncover hidden insights, and build smarter customer experiences. Whether you are a startup looking to leverage AI for the first time or an enterprise seeking to scale intelligent automation, our team has the expertise and experience to guide you.",
+        "Our AI services span the full spectrum: machine learning model development, natural language processing (NLP) for chatbots and document analysis, computer vision for quality control and object recognition, predictive analytics for demand forecasting, and robotic process automation (RPA) to eliminate repetitive manual work. We build custom AI models trained on your specific data, ensuring accuracy and relevance to your unique business context.",
+        "Industries we serve include manufacturing, healthcare, retail, logistics, education, and financial services. Our proven AI implementation methodology — starting with a business assessment, followed by data strategy, model development, integration, and continuous optimization — ensures that every AI project delivers measurable ROI. Reduce operational costs by up to 60%, improve decision-making accuracy, and give your team the tools to focus on high-value work. Contact us today for a free AI readiness consultation.",
+      ]}
       features={[
         {
           title: "Machine Learning Models",

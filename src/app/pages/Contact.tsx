@@ -55,7 +55,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="pt-28">
+    <div className="pt-36">
       {/* Hero Section */}
       <section className="relative py-20 text-white overflow-hidden">
         <div className="absolute inset-0">
@@ -324,6 +324,104 @@ export default function Contact() {
               <p className="text-sm mt-2">
                 Whitefield-Kadugodi, Bangalore – 560067
               </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Why Contact Us Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl text-[#0B3C5D] mb-4">
+              Why Work With Lotus Prime Digital Solutions?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              We are a trusted digital transformation partner for businesses
+              across Bangalore and India. When you contact us, you are
+              connecting with a team of experienced professionals dedicated to
+              understanding your goals and delivering technology solutions that
+              produce real, measurable results.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                title: "Free Consultation",
+                description:
+                  "Every engagement starts with a no-obligation consultation where we listen to your requirements, assess your challenges, and outline a customized solution strategy — at zero cost to you.",
+              },
+              {
+                title: "Transparent Process",
+                description:
+                  "We believe in full transparency. You receive regular project updates, access to development progress, and detailed reporting throughout the engagement so you are always in control.",
+              },
+              {
+                title: "End-to-End Delivery",
+                description:
+                  "From strategy and design to development, deployment, training, and ongoing support — we are your single point of contact for all your digital technology needs.",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-gray-50 rounded-2xl p-8"
+              >
+                <h3 className="text-xl text-[#0B3C5D] mb-3">{item.title}</h3>
+                <p className="text-gray-600">{item.description}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* FAQ Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl text-[#0B3C5D] mb-8 text-center">
+              Frequently Asked Questions
+            </h2>
+            <div className="max-w-4xl mx-auto space-y-6">
+              {[
+                {
+                  q: "What services does Lotus Prime Digital Solutions offer?",
+                  a: "We offer a comprehensive range of digital services including Website Development, AI Solutions, Mobile App Development, Office Automation, Digital Marketing, Social Media Management, Cloud Solutions, CRM Solutions, E-Commerce Development, and End-to-End Digital Transformation. We serve businesses of all sizes across Bangalore, India, and internationally.",
+                },
+                {
+                  q: "How long does a typical project take?",
+                  a: "Project timelines vary by scope and complexity. A standard business website typically takes 3–6 weeks. Mobile applications take 8–16 weeks. CRM implementation projects typically take 4–10 weeks. AI and automation projects are assessed individually. We provide a detailed project timeline during your initial consultation.",
+                },
+                {
+                  q: "Do you provide post-launch support and maintenance?",
+                  a: "Yes. We offer flexible support and maintenance packages for all our solutions. Our support services include bug fixes, feature updates, performance monitoring, security patches, and technical assistance. We provide 24/7 support for critical systems and business hours support for standard projects.",
+                },
+                {
+                  q: "Can you work with our existing technology systems?",
+                  a: "Absolutely. Our integration experts have experience connecting with all major business platforms — including Tally, SAP, Salesforce, Microsoft 365, QuickBooks, Shopify, WooCommerce, and hundreds of other tools via APIs. We assess your existing technology stack and design solutions that complement and enhance what you already have.",
+                },
+                {
+                  q: "What industries do you specialize in?",
+                  a: "We have delivered projects across manufacturing, healthcare, education, retail, e-commerce, real estate, hospitality, logistics, financial services, and professional services. Our industry experience allows us to bring both technical expertise and domain knowledge to every project.",
+                },
+              ].map((faq, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-50 rounded-2xl p-6 border border-gray-100"
+                >
+                  <h3 className="text-lg text-[#0B3C5D] mb-3">{faq.q}</h3>
+                  <p className="text-gray-600">{faq.a}</p>
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>

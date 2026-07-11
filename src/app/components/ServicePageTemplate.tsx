@@ -23,6 +23,7 @@ interface ServicePageTemplateProps {
   icon: LucideIcon;
   title: string;
   description: string;
+  overview?: string[];
   features: Feature[];
   benefits: Benefit[];
   process: ProcessStep[];
@@ -35,6 +36,7 @@ export function ServicePageTemplate({
   icon: Icon,
   title,
   description,
+  overview,
   features,
   benefits,
   process,
@@ -43,7 +45,7 @@ export function ServicePageTemplate({
   heroImage,
 }: ServicePageTemplateProps) {
   return (
-    <div className="pt-28">
+    <div className="pt-36">
       {/* Hero Banner */}
       <section
         className={`relative py-20 bg-gradient-to-br ${gradientFrom} ${gradientTo} text-white overflow-hidden`}
@@ -104,6 +106,22 @@ export function ServicePageTemplate({
           </div>
         </div>
       </section>
+
+      {/* Overview Section */}
+      {overview && overview.length > 0 && (
+        <section className="py-16 bg-white border-b border-gray-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            {overview.map((para, i) => (
+              <p
+                key={i}
+                className="text-gray-700 text-lg leading-relaxed mb-5 last:mb-0"
+              >
+                {para}
+              </p>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Features */}
       <section className="py-20 bg-white">
