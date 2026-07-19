@@ -210,7 +210,12 @@ export function Header() {
               >
                 CRM
               </Link>
-              <a href="/employee/login">Employee Login</a>
+              <a
+                href="/employee/login"
+                className="block w-full px-4 py-2 bg-[#0B3C5D]/10 text-[#0B3C5D] rounded-lg font-medium text-center hover:bg-gradient-to-r hover:from-[#0B3C5D] hover:to-[#1ABC9C] hover:text-white hover:shadow-lg hover:shadow-[#0B3C5D]/50 hover:scale-105 transition-all duration-300"
+              >
+                Employee Login
+              </a>
             </div>
           </nav>
         </div>

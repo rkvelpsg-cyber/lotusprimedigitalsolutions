@@ -170,11 +170,15 @@ export function Footer() {
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#1ABC9C] flex-shrink-0 mt-0.5" />
                 <span className="text-gray-300 leading-relaxed">
-                  SSK Residency, Vinayaka Layout, 1st Cross,
+                  Ground Floor, SSK Residency,
+                  <br />
+                  Vinayaka Layout, 1st Cross,
                   <br />
                   Food Corporation of India Main Road,
                   <br />
-                  Whitefield-Kadugodi, Bangalore &ndash; 560067
+                  Whitefield-Kadugodi,
+                  <br />
+                  Bangalore &ndash; 560067
                 </span>
               </li>
               <li className="flex items-center gap-2.5">

@@ -127,6 +127,11 @@ export default function Home() {
       src: "/Asian_Dental.png",
       location: "Bangalore",
     },
+    {
+      name: "Greenspa",
+      src: "/Greenspa.png",
+      location: "Bangalore",
+    },
   ];
 
   return (
