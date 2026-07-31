@@ -132,6 +132,16 @@ export default function Home() {
       src: "/Greenspa.png",
       location: "Bangalore",
     },
+    {
+      name: "Dentelope Advanced Dental Care",
+      src: "/dentelope.svg",
+      location: "Bengaluru",
+    },
+    {
+      name: "Serene Dentistry",
+      src: "/serene.png",
+      location: "Bengaluru",
+    },
   ];
 
   return (
@@ -313,45 +323,48 @@ export default function Home() {
 
       {/* Client Logos */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl text-[#0B3C5D] mb-4">
-              Trusted by Leading Clients
-            </h2>
-            <p className="text-lg text-gray-600">
-              Showcasing organizations we have successfully partnered with
-            </p>
-          </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl text-[#0B3C5D] mb-4">
+            Trusted by Leading Clients
+          </h2>
+          <p className="text-lg text-gray-600">
+            Showcasing organizations we have successfully partnered with
+          </p>
+        </motion.div>
 
-          <div className="overflow-hidden">
-            <motion.div
-              className="flex w-max gap-6 md:gap-8"
-              animate={{ x: ["0%", "-50%"] }}
-              transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
-            >
-              {[...clientLogos, ...clientLogos].map((client, index) => (
-                <div
-                  key={`${client.name}-${index}`}
-                  className="bg-gray-50 border border-gray-100 rounded-2xl p-6 h-64 md:h-72 w-[18rem] md:w-[20rem] relative flex items-center justify-center shrink-0"
-                >
-                  <img
-                    src={client.src}
-                    alt={`${client.name} logo`}
-                    className="max-h-40 md:max-h-48 w-auto max-w-full object-contain"
-                    loading="lazy"
-                  />
-                  <p className="absolute bottom-5 left-0 right-0 text-center text-sm md:text-base text-[#0B3C5D] font-medium">
+        <div className="overflow-hidden w-full">
+          <motion.div
+            className="flex w-max gap-6 md:gap-8 px-4"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
+          >
+            {[...clientLogos, ...clientLogos].map((client, index) => (
+              <div
+                key={`${client.name}-${index}`}
+                className="bg-gray-50 border border-gray-100 rounded-2xl p-6 pb-16 h-64 md:h-72 w-[18rem] md:w-[20rem] relative flex items-center justify-center shrink-0"
+              >
+                <img
+                  src={client.src}
+                  alt={`${client.name} logo`}
+                  className="max-h-40 md:max-h-48 w-auto max-w-full object-contain"
+                  loading="lazy"
+                />
+                <div className="absolute bottom-4 left-0 right-0 text-center">
+                  <p className="text-xs md:text-sm text-[#0B3C5D] font-semibold leading-tight px-2">
+                    {client.name}
+                  </p>
+                  <p className="text-xs text-gray-500 mt-0.5">
                     {client.location}
                   </p>
                 </div>
-              ))}
-            </motion.div>
-          </div>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
