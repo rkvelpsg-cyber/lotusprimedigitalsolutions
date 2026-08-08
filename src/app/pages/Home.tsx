@@ -142,6 +142,11 @@ export default function Home() {
       src: "/serene.png",
       location: "Bengaluru",
     },
+    {
+      name: "ToothVerse Dental Care",
+      src: "/toothversecliniclogo.png",
+      location: "Bangalore",
+    },
   ];
 
   return (
