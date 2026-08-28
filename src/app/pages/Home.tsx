@@ -147,6 +147,11 @@ export default function Home() {
       src: "/toothversecliniclogo.png",
       location: "Bangalore",
     },
+    {
+      name: "Trendafili",
+      src: "/trendafili.png",
+      location: "Bengaluru",
+    },
   ];
 
   return (
