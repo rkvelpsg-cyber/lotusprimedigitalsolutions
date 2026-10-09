@@ -152,6 +152,11 @@ export default function Home() {
       src: "/trendafili.png",
       location: "Bengaluru",
     },
+    {
+      name: "Lil Paws - Multi Specialty Veterinary Hospital, Bangalore",
+      src: "/lilpaws.png",
+      location: "",
+    },
   ];
 
   return (
@@ -368,9 +373,11 @@ export default function Home() {
                   <p className="text-xs md:text-sm text-[#0B3C5D] font-semibold leading-tight px-2">
                     {client.name}
                   </p>
-                  <p className="text-xs text-gray-500 mt-0.5">
-                    {client.location}
-                  </p>
+                  {client.location && (
+                    <p className="text-xs text-gray-500 mt-0.5">
+                      {client.location}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
