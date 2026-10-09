@@ -1,7 +1,9 @@
 import path from "path";
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants.js";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+/** @type {(phase: string) => import('next').NextConfig} */
+const nextConfig = (phase) => ({
+  distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next-dev" : ".next",
   webpack(config) {
     config.resolve.alias = {
       ...config.resolve.alias,
@@ -17,6 +19,6 @@ const nextConfig = {
       },
     ],
   },
-};
+});
 
 export default nextConfig;

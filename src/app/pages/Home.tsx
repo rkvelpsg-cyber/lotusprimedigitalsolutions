@@ -157,6 +157,11 @@ export default function Home() {
       src: "/lilpaws.png",
       location: "",
     },
+    {
+      name: "Smile Dental Care, Bangalore",
+      src: "/smiledentalban.png",
+      location: "",
+    },
   ];
 
   return (
